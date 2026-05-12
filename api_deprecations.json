@@ -1,0 +1,516 @@
+{
+  "1.22": {
+    "deleted": [
+      {
+        "kind": "MutatingWebhookConfiguration",
+        "group": "admissionregistration.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.16",
+        "replacement_group": "admissionregistration.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta MutatingWebhookConfiguration removed. In v1: failurePolicy defaults to Fail, matchPolicy to Equivalent, timeoutSeconds to 10s. sideEffects and admissionReviewVersions required."
+      },
+      {
+        "kind": "ValidatingWebhookConfiguration",
+        "group": "admissionregistration.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.16",
+        "replacement_group": "admissionregistration.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta ValidatingWebhookConfiguration removed. Same default changes as MutatingWebhookConfiguration. webhooks[*].name must be unique."
+      },
+      {
+        "kind": "CustomResourceDefinition",
+        "group": "apiextensions.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.16",
+        "replacement_group": "apiextensions.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta CRD removed. Major restructuring: spec.version replaced by spec.versions, spec.validation replaced by spec.versions[*].schema, openAPIV3Schema required."
+      },
+      {
+        "kind": "APIService",
+        "group": "apiregistration.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.19",
+        "replacement_group": "apiregistration.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta APIService removed. No notable changes between v1beta1 and v1."
+      },
+      {
+        "kind": "TokenReview",
+        "group": "authentication.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.19",
+        "replacement_group": "authentication.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta TokenReview removed. No notable changes."
+      },
+      {
+        "kind": "SubjectAccessReview",
+        "group": "authorization.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.19",
+        "replacement_group": "authorization.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta SubjectAccessReview removed."
+      },
+      {
+        "kind": "LocalSubjectAccessReview",
+        "group": "authorization.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.19",
+        "replacement_group": "authorization.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta LocalSubjectAccessReview removed."
+      },
+      {
+        "kind": "SelfSubjectAccessReview",
+        "group": "authorization.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.19",
+        "replacement_group": "authorization.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta SelfSubjectAccessReview removed."
+      },
+      {
+        "kind": "CertificateSigningRequest",
+        "group": "certificates.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.19",
+        "replacement_group": "certificates.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta CertificateSigningRequest removed. In v1, spec.signerName is required."
+      },
+      {
+        "kind": "Lease",
+        "group": "coordination.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.19",
+        "replacement_group": "coordination.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta Lease removed. No notable changes."
+      },
+      {
+        "kind": "Ingress",
+        "group": "extensions",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.14",
+        "replacement_group": "networking.k8s.io",
+        "replacement_version": "v1",
+        "description": "Ingress in extensions/v1beta1 removed. Migrate to networking.k8s.io/v1. Use spec.ingressClassName instead of kubernetes.io/ingress.class annotation. pathType field now required."
+      },
+      {
+        "kind": "Ingress",
+        "group": "networking.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.19",
+        "replacement_group": "networking.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta Ingress in networking.k8s.io removed. pathType field now required."
+      },
+      {
+        "kind": "IngressClass",
+        "group": "networking.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.19",
+        "replacement_group": "networking.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta IngressClass removed. No notable changes."
+      },
+      {
+        "kind": "ClusterRole",
+        "group": "rbac.authorization.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.17",
+        "replacement_group": "rbac.authorization.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta ClusterRole removed. No notable changes."
+      },
+      {
+        "kind": "ClusterRoleBinding",
+        "group": "rbac.authorization.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.17",
+        "replacement_group": "rbac.authorization.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta ClusterRoleBinding removed. No notable changes."
+      },
+      {
+        "kind": "Role",
+        "group": "rbac.authorization.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.17",
+        "replacement_group": "rbac.authorization.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta Role removed. No notable changes."
+      },
+      {
+        "kind": "RoleBinding",
+        "group": "rbac.authorization.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.17",
+        "replacement_group": "rbac.authorization.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta RoleBinding removed. No notable changes."
+      },
+      {
+        "kind": "PriorityClass",
+        "group": "scheduling.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.14",
+        "replacement_group": "scheduling.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta PriorityClass removed. No notable changes."
+      },
+      {
+        "kind": "CSIDriver",
+        "group": "storage.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.19",
+        "replacement_group": "storage.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta CSIDriver removed. No notable changes."
+      },
+      {
+        "kind": "CSINode",
+        "group": "storage.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.19",
+        "replacement_group": "storage.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta CSINode removed. No notable changes."
+      },
+      {
+        "kind": "StorageClass",
+        "group": "storage.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.19",
+        "replacement_group": "storage.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta StorageClass removed. No notable changes."
+      },
+      {
+        "kind": "VolumeAttachment",
+        "group": "storage.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.22",
+        "deprecated_version": "1.19",
+        "replacement_group": "storage.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta VolumeAttachment removed. No notable changes."
+      }
+    ],
+    "deprecated": [
+      {
+        "kind": "HorizontalPodAutoscaler",
+        "group": "autoscaling",
+        "version": "v2beta1",
+        "deprecated_version": "1.22",
+        "replacement_group": "autoscaling",
+        "replacement_version": "v2",
+        "description": "autoscaling/v2beta1 deprecated. Migrate to autoscaling/v2 (available since v1.23). Removed in v1.25."
+      }
+    ]
+  },
+  "1.23": {
+    "deleted": [],
+    "deprecated": [
+      {
+        "kind": "HorizontalPodAutoscaler",
+        "group": "autoscaling",
+        "version": "v2beta2",
+        "deprecated_version": "1.23",
+        "replacement_group": "autoscaling",
+        "replacement_version": "v2",
+        "description": "autoscaling/v2beta2 deprecated. Migrate to autoscaling/v2 (available since v1.23). Removed in v1.26."
+      },
+      {
+        "kind": "FlowSchema",
+        "group": "flowcontrol.apiserver.k8s.io",
+        "version": "v1beta1",
+        "deprecated_version": "1.23",
+        "replacement_group": "flowcontrol.apiserver.k8s.io",
+        "replacement_version": "v1beta2",
+        "description": "flowcontrol.apiserver.k8s.io/v1beta1 FlowSchema deprecated. v1beta2 available since v1.23. Removed in v1.26."
+      },
+      {
+        "kind": "PriorityLevelConfiguration",
+        "group": "flowcontrol.apiserver.k8s.io",
+        "version": "v1beta1",
+        "deprecated_version": "1.23",
+        "replacement_group": "flowcontrol.apiserver.k8s.io",
+        "replacement_version": "v1beta2",
+        "description": "flowcontrol.apiserver.k8s.io/v1beta1 PriorityLevelConfiguration deprecated. v1beta2 available since v1.23. Removed in v1.26."
+      }
+    ]
+  },
+  "1.24": {
+    "deleted": [],
+    "deprecated": [
+      {
+        "kind": "CSIStorageCapacity",
+        "group": "storage.k8s.io",
+        "version": "v1beta1",
+        "deprecated_version": "1.24",
+        "replacement_group": "storage.k8s.io",
+        "replacement_version": "v1",
+        "description": "storage.k8s.io/v1beta1 CSIStorageCapacity deprecated. v1 available since v1.24. Removed in v1.27."
+      }
+    ]
+  },
+  "1.25": {
+    "deleted": [
+      {
+        "kind": "CronJob",
+        "group": "batch",
+        "version": "v1beta1",
+        "deleted_version": "1.25",
+        "deprecated_version": "1.21",
+        "replacement_group": "batch",
+        "replacement_version": "v1",
+        "description": "Beta CronJob removed. No notable changes. batch/v1 available since v1.21."
+      },
+      {
+        "kind": "EndpointSlice",
+        "group": "discovery.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.25",
+        "deprecated_version": "1.21",
+        "replacement_group": "discovery.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta EndpointSlice removed. In v1, use per-Endpoint nodeName instead of topology."
+      },
+      {
+        "kind": "Event",
+        "group": "events.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.25",
+        "deprecated_version": "1.19",
+        "replacement_group": "events.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta Event removed. Field renames in v1: involvedObject to regarding, firstTimestamp to eventTime."
+      },
+      {
+        "kind": "HorizontalPodAutoscaler",
+        "group": "autoscaling",
+        "version": "v2beta1",
+        "deleted_version": "1.25",
+        "deprecated_version": "1.22",
+        "replacement_group": "autoscaling",
+        "replacement_version": "v2",
+        "description": "autoscaling/v2beta1 HPA removed. Migrate to autoscaling/v2."
+      },
+      {
+        "kind": "PodDisruptionBudget",
+        "group": "policy",
+        "version": "v1beta1",
+        "deleted_version": "1.25",
+        "deprecated_version": "1.21",
+        "replacement_group": "policy",
+        "replacement_version": "v1",
+        "description": "Beta PodDisruptionBudget removed. In v1, empty spec.selector selects all pods in namespace."
+      },
+      {
+        "kind": "PodSecurityPolicy",
+        "group": "policy",
+        "version": "v1beta1",
+        "deleted_version": "1.25",
+        "deprecated_version": "1.21",
+        "replacement_group": "",
+        "replacement_version": "",
+        "description": "PodSecurityPolicy entirely removed with no built-in replacement. Use Pod Security Admission controller or third-party admission webhook."
+      },
+      {
+        "kind": "RuntimeClass",
+        "group": "node.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.25",
+        "deprecated_version": "1.20",
+        "replacement_group": "node.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta RuntimeClass removed. No notable changes."
+      }
+    ],
+    "deprecated": []
+  },
+  "1.26": {
+    "deleted": [
+      {
+        "kind": "FlowSchema",
+        "group": "flowcontrol.apiserver.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.26",
+        "deprecated_version": "1.23",
+        "replacement_group": "flowcontrol.apiserver.k8s.io",
+        "replacement_version": "v1beta2",
+        "description": "flowcontrol.apiserver.k8s.io/v1beta1 FlowSchema removed. Migrate to v1beta2 or v1beta3."
+      },
+      {
+        "kind": "PriorityLevelConfiguration",
+        "group": "flowcontrol.apiserver.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.26",
+        "deprecated_version": "1.23",
+        "replacement_group": "flowcontrol.apiserver.k8s.io",
+        "replacement_version": "v1beta2",
+        "description": "flowcontrol.apiserver.k8s.io/v1beta1 PriorityLevelConfiguration removed. Migrate to v1beta2 or v1beta3."
+      },
+      {
+        "kind": "HorizontalPodAutoscaler",
+        "group": "autoscaling",
+        "version": "v2beta2",
+        "deleted_version": "1.26",
+        "deprecated_version": "1.23",
+        "replacement_group": "autoscaling",
+        "replacement_version": "v2",
+        "description": "autoscaling/v2beta2 HPA removed. Migrate to autoscaling/v2."
+      }
+    ],
+    "deprecated": [
+      {
+        "kind": "FlowSchema",
+        "group": "flowcontrol.apiserver.k8s.io",
+        "version": "v1beta2",
+        "deprecated_version": "1.26",
+        "replacement_group": "flowcontrol.apiserver.k8s.io",
+        "replacement_version": "v1beta3",
+        "description": "flowcontrol.apiserver.k8s.io/v1beta2 FlowSchema deprecated. v1beta3 available since v1.26. Removed in v1.29."
+      },
+      {
+        "kind": "PriorityLevelConfiguration",
+        "group": "flowcontrol.apiserver.k8s.io",
+        "version": "v1beta2",
+        "deprecated_version": "1.26",
+        "replacement_group": "flowcontrol.apiserver.k8s.io",
+        "replacement_version": "v1beta3",
+        "description": "flowcontrol.apiserver.k8s.io/v1beta2 PriorityLevelConfiguration deprecated. Removed in v1.29."
+      }
+    ]
+  },
+  "1.27": {
+    "deleted": [
+      {
+        "kind": "CSIStorageCapacity",
+        "group": "storage.k8s.io",
+        "version": "v1beta1",
+        "deleted_version": "1.27",
+        "deprecated_version": "1.24",
+        "replacement_group": "storage.k8s.io",
+        "replacement_version": "v1",
+        "description": "Beta CSIStorageCapacity removed. storage.k8s.io/v1 available since v1.24."
+      }
+    ],
+    "deprecated": []
+  },
+  "1.28": {
+    "deleted": [],
+    "deprecated": []
+  },
+  "1.29": {
+    "deleted": [
+      {
+        "kind": "FlowSchema",
+        "group": "flowcontrol.apiserver.k8s.io",
+        "version": "v1beta2",
+        "deleted_version": "1.29",
+        "deprecated_version": "1.26",
+        "replacement_group": "flowcontrol.apiserver.k8s.io",
+        "replacement_version": "v1",
+        "description": "flowcontrol.apiserver.k8s.io/v1beta2 FlowSchema removed. Migrate to v1 (available since v1.29)."
+      },
+      {
+        "kind": "PriorityLevelConfiguration",
+        "group": "flowcontrol.apiserver.k8s.io",
+        "version": "v1beta2",
+        "deleted_version": "1.29",
+        "deprecated_version": "1.26",
+        "replacement_group": "flowcontrol.apiserver.k8s.io",
+        "replacement_version": "v1",
+        "description": "flowcontrol.apiserver.k8s.io/v1beta2 PriorityLevelConfiguration removed. Migrate to v1 (available since v1.29)."
+      }
+    ],
+    "deprecated": [
+      {
+        "kind": "FlowSchema",
+        "group": "flowcontrol.apiserver.k8s.io",
+        "version": "v1beta3",
+        "deprecated_version": "1.29",
+        "replacement_group": "flowcontrol.apiserver.k8s.io",
+        "replacement_version": "v1",
+        "description": "flowcontrol.apiserver.k8s.io/v1beta3 FlowSchema deprecated. v1 available since v1.29. Removed in v1.32."
+      },
+      {
+        "kind": "PriorityLevelConfiguration",
+        "group": "flowcontrol.apiserver.k8s.io",
+        "version": "v1beta3",
+        "deprecated_version": "1.29",
+        "replacement_group": "flowcontrol.apiserver.k8s.io",
+        "replacement_version": "v1",
+        "description": "flowcontrol.apiserver.k8s.io/v1beta3 PriorityLevelConfiguration deprecated. v1 available since v1.29. Removed in v1.32."
+      }
+    ]
+  },
+  "1.30": {
+    "deleted": [],
+    "deprecated": []
+  },
+  "1.31": {
+    "deleted": [],
+    "deprecated": []
+  },
+  "1.32": {
+    "deleted": [
+      {
+        "kind": "FlowSchema",
+        "group": "flowcontrol.apiserver.k8s.io",
+        "version": "v1beta3",
+        "deleted_version": "1.32",
+        "deprecated_version": "1.29",
+        "replacement_group": "flowcontrol.apiserver.k8s.io",
+        "replacement_version": "v1",
+        "description": "flowcontrol.apiserver.k8s.io/v1beta3 FlowSchema removed. Migrate to v1 (available since v1.29)."
+      },
+      {
+        "kind": "PriorityLevelConfiguration",
+        "group": "flowcontrol.apiserver.k8s.io",
+        "version": "v1beta3",
+        "deleted_version": "1.32",
+        "deprecated_version": "1.29",
+        "replacement_group": "flowcontrol.apiserver.k8s.io",
+        "replacement_version": "v1",
+        "description": "flowcontrol.apiserver.k8s.io/v1beta3 PriorityLevelConfiguration removed. Migrate to v1 (available since v1.29)."
+      }
+    ],
+    "deprecated": []
+  },
+  "1.33": {
+    "deleted": [],
+    "deprecated": []
+  },
+  "1.34": {
+    "deleted": [],
+    "deprecated": []
+  }
+}
